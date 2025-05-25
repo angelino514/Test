@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+html , body {
+    width: 100%;
+}
+
+body {
+    font-family: "font/Roboto_Mono.zip";
+}
+
+
+@media (max-width: 1200px) {
+    header {
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        overflow-x: hidden;
+        background: whitesmoke;
+        
+    }
+    
+    .header-interface {
+        width: 90%;
+        height: 100%;
+        display: flex;
+    }
+    
+    .logo {
+        width: 20%;
+        align-items: center;
+        justify-content: start;
+        display: flex;
+        height: 100%;
+    }
+    
+    .logo-title {
+        font-size: 1.9rem;
+        color: #05133B;
+    }
+    
+    .div-navbar {
+        width: 60%;
+        align-items: center;
+        justify-content: start;
+        display: flex;
+        height: 100%;
+    }
+    
+    .remove , .div-button-menu {
+        display : none;
+    }
+    
+    .navbar {
+        background: #0061F6 ;
+        padding: 0.5rem 2rem ;
+        border-radius: 20px;
+    }
+    
+    .list-navbar {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+    }
+    
+    .link {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 0.1rem 1rem;
+        border-radius: 20px;
+        align-items: center;
+        display: flex;
+        gap: 0.5rem;
+        cursor: pointer;
+        justify-content: center;
+    }
+
+    .link :nth-child(1) {
+        padding: 0.1rem;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    
+    .link-activo :nth-child(1) {
+        padding: 0.1rem;
+        background: #0061F6 ;
+    }
+    
+    .link-activo {
+        background: white;
+        color: #0061F6;
+    }
+    
+    
+    .icon-link {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        padding: 0.1rem;
+    }
+    
+    .text-link {
+        font-size: 1rem;
+    }
+    
+    .div-watsaap {
+        width: 20%;
+        align-items: center;
+        justify-content: right;
+        display: flex;
+        height: 100%;
+    }
+    
+    .button-WatsAp {
+        background: #1DAB61;
+        display: flex;
+        border-style: none;
+        border-radius: 10px;
+        padding: 0.5rem 1rem;
+        gap: 1rem;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .icon-watsaap {
+        width: 1.5rem;
+    }
+    
+    .text-Watsaap {
+        font-size: 1rem;
+        color: white;
+    }
+    
+    .section-interface {
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    header {
+        width: 100%;
+        height: 8vh;
+    }
+    
+    .header-interface {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    
+    .logo {
+        width: 20%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .logo-title {
+        font-size: 1.2rem;
+        margin-left: 2rem;
+    }
+    
+    .div-watsaap {
+        height: 8vw;
+        width: 10vw;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        position: fixed;
+        bottom: 5rem;
+        right: 2rem;
+    }
+    
+   
+    .div-navbar {
+        overflow: hidden;
+        position: fixed;
+        width: 0vw;
+        height: 100vh;
+        align-items: start;
+        justify-content: start;
+        background: white;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        z-index: 2000;
+        transition: .2s;
+        
+    }
+    
+    .activo-Navbar {
+        width: 90vw;
+    }
+    
+    .remove {
+        position: absolute;
+        left: 0.5rem;
+        top: 0.1rem;
+        display: flex;
+        border-style: none;
+        padding: 1rem;
+        background: transparent;
+    }
+    
+    .remove-icon {
+        width: 2.5rem;
+    }
+    
+    .navbar {
+        padding: 0rem 0rem;
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
+    
+    .list-navbar {
+        flex-direction: column;
+        margin-left: 0rem;
+        gap: 2rem;
+        padding-top: 5rem;
+        
+    }
+    
+    .link {
+        padding: 0rem 1rem;
+        align-items: center;
+        justify-content: start;
+        display: flex;
+        width: 70vw;
+        height: 8vh;
+        border-radius: 0;
+        margin-left: 2rem;
+        gap: 3rem;
+    }
+    
+    .icon-link {
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    .div-button-menu {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        display: flex;
+    }
+    
+    .button-menu {
+        background: transparent;
+        border-style: none;
+        margin-right: 2rem;
+    }
+    
+    .line {
+        width: 2rem;
+        height: 0.8vh;
+        background: black;
+        margin: 0.2rem;
+        border-radius: 10px;
+    }
+}
