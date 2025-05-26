@@ -1,33 +1,36 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
-html , body {
+
+body , html {
     width: 100%;
 }
 
+
+
 body {
-    font-family: "font/Roboto_Mono.zip";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+font-family: "Roboto" , sans-serif;
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 2890px) {
     header {
+        height: 10vh;
         width: 100%;
-        height: 5vh;
-        display: flex;
         align-items: center;
         justify-content: center;
+        display: flex;
+        border-bottom : 1px solid black;
         position: fixed;
         top: 0;
-        z-index: 1000;
-        overflow-x: hidden;
-        background: whitesmoke;
-        
     }
     
     .header-interface {
@@ -38,239 +41,259 @@ body {
     
     .logo {
         width: 20%;
+        height: 100%;
         align-items: center;
         justify-content: start;
         display: flex;
-        height: 100%;
     }
     
     .logo-title {
-        font-size: 1.9rem;
-        color: #05133B;
+        font-size: 3vw;
     }
     
     .div-navbar {
         width: 60%;
+        height: 100%;
         align-items: center;
         justify-content: start;
         display: flex;
-        height: 100%;
     }
     
-    .remove , .div-button-menu {
-        display : none;
+    .navbar-list {
+        width: 100%;
+        height: 50%;
+        align-items: center;
+        justify-content: start;
+        display: flex;
+       
     }
     
     .navbar {
-        background: #0061F6 ;
-        padding: 0.5rem 2rem ;
+        width: 90%;
+        height: 40%;
+        background: #0061F6;
+        align-items: center;
+        justify-content: center;
+        display: flex;
         border-radius: 20px;
     }
     
-    .list-navbar {
+    .list-itens-navbar {
         display: flex;
-        gap: 2rem;
         list-style: none;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: start;
+        display: flex;
+        
+    }
+    
+    .list-itens-navbar li {
+        width: 40%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
     }
     
     .link {
-        color: white;
         text-decoration: none;
-        font-size: 1rem;
-        padding: 0.1rem 1rem;
-        border-radius: 20px;
-        align-items: center;
-        display: flex;
-        gap: 0.5rem;
-        cursor: pointer;
-        justify-content: center;
-    }
-
-    .link :nth-child(1) {
-        padding: 0.1rem;
-        border-radius: 50%;
+        padding: 2% 6%;
         align-items: center;
         justify-content: center;
         display: flex;
-    }
-    
-    .link-activo :nth-child(1) {
-        padding: 0.1rem;
-        background: #0061F6 ;
+        gap: 2vw;
+        border-radius: 30px;
     }
     
     .link-activo {
         background: white;
+    }
+    
+    .link-activo .material-symbols-outlined {
         color: #0061F6;
     }
     
+    .link-activo .text-link {
+        color: black;
+    }
     
-    .icon-link {
-        width: 1rem;
-        height: 1rem;
-        border-radius: 50%;
-        padding: 0.1rem;
+    .material-symbols-outlined {
+        font-size: 2.5vw;
+        color: white;
+        font-weight: 100;
     }
     
     .text-link {
-        font-size: 1rem;
-    }
-    
-    .div-watsaap {
-        width: 20%;
-        align-items: center;
-        justify-content: right;
-        display: flex;
-        height: 100%;
-    }
-    
-    .button-WatsAp {
-        background: #1DAB61;
-        display: flex;
-        border-style: none;
-        border-radius: 10px;
-        padding: 0.5rem 1rem;
-        gap: 1rem;
-        align-items: center;
-        cursor: pointer;
-    }
-    
-    .icon-watsaap {
-        width: 1.5rem;
-    }
-    
-    .text-Watsaap {
-        font-size: 1rem;
         color: white;
     }
     
-    .section-interface {
-        width: 100%;
-        overflow-x: hidden;
-    }
-}
-
-@media (max-width: 768px) {
-    
-    header {
-        width: 100%;
-        height: 8vh;
-    }
-    
-    .header-interface {
-        width: 100%;
-        height: 100%;
-        display: flex;
-    }
-    
-    .logo {
-        width: 20%;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .logo-title {
-        font-size: 1.2rem;
-        margin-left: 2rem;
+    .div-button-remove {
+        display: none;
     }
     
     .div-watsaap {
-        height: 8vw;
-        width: 10vw;
+        width: 20%;
+        height: 100%;
         align-items: center;
-        justify-content: center;
-        display: none;
-        position: fixed;
-        bottom: 5rem;
-        right: 2rem;
+        justify-content: right ;
+        display: flex;
     }
     
-   
+    
+    .button-WatsAp {
+       width: 80%;
+       height: 20%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 10%;
+       border-style: none;
+       background: #1DAB61;
+       border-radius: 5px;
+    }
+    
+    .whatsapp-icon {
+        width: 2.5vw;
+        padding-top: 0.5vw;
+    }
+    
+    .text-Watsaap {
+        font-size: 1.5vw;
+        color: white;
+    }
+    
+    .div-button-menu {
+        display: none;
+    }
+}
+
+@media  (max-width: 780px) {
+    
+    .header-interface {
+        width: 90%;
+    }
+    
+    .logo {
+        width: 30%;
+    }
+    
+    .logo-title {
+        font-size: 5vw;
+        margin-left: 5%;
+    }
+    
     .div-navbar {
-        overflow: hidden;
         position: fixed;
-        width: 0vw;
-        height: 100vh;
+        top: 0;
+        width: 0%;
+        height: 100%;
+        right: 0;
+        overflow: hidden;
+        transition: .2s;
+    }
+    
+    .div-navbar-acivo {
+        width: 80%;
+    }
+    
+    .navbar-list , .navbar {
         align-items: start;
         justify-content: start;
-        background: white;
-        right: 0;
-        top: 0;
-        flex-direction: column;
-        z-index: 2000;
-        transition: .2s;
-        
-    }
-    
-    .activo-Navbar {
-        width: 90vw;
-    }
-    
-    .remove {
-        position: absolute;
-        left: 0.5rem;
-        top: 0.1rem;
-        display: flex;
-        border-style: none;
-        padding: 1rem;
-        background: transparent;
-    }
-    
-    .remove-icon {
-        width: 2.5rem;
+        width: 100%;
+        height: 100%;
     }
     
     .navbar {
-        padding: 0rem 0rem;
-        width: 100vw;
-        height: 100vh;
         border-radius: 0;
+        flex-direction: column;
     }
     
-    .list-navbar {
+    .div-button-remove {
+        display: flex;
+        width: 100%;
+        height: 10%;
+        align-items: center;
+        justify-content: start;
+    }
+    
+    .button-remove {
+        padding: 5%;
+        margin-left: 5%;
+        background: transparent;
+        border-style: none;
+    }
+    
+    .button-remove .material-symbols-outlined{
+        font-size: 10vw;
+    }
+    
+    .list-itens-navbar {
         flex-direction: column;
-        margin-left: 0rem;
-        gap: 2rem;
-        padding-top: 5rem;
+        height: 80%;
+        align-items: start;
+        padding-left: 10%;
+        justify-content: start;
+        gap: 5%;
+    }
+    
+    .list-itens-navbar li {
+        width: 100%;
+        height: 10%;
+        align-items: start;
+        justify-content: start;
+        display: flex;
         
     }
     
     .link {
-        padding: 0rem 1rem;
+        width: 80%;
+        height: 100%;
+        border-radius: 0;
+        padding: 0;
+        gap: 10%;
+        align-items: center;
+        display: flex;
+    }
+    
+     .link  .material-symbols-outlined {
+        flex: 30%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 10vw;
+    }
+    
+    .text-link {
+        flex: 60%;
+        height: 100%;
         align-items: center;
         justify-content: start;
         display: flex;
-        width: 70vw;
-        height: 8vh;
-        border-radius: 0;
-        margin-left: 2rem;
-        gap: 3rem;
     }
     
-    .icon-link {
-        width: 2rem;
-        height: 2rem;
+    .div-watsaap {
+        display: none;
     }
     
     .div-button-menu {
-        width: 80%;
+        width: 70%;
         display: flex;
         align-items: center;
         justify-content: right;
-        display: flex;
+        height: 100%;
     }
     
     .button-menu {
         background: transparent;
+        padding: 5%;
         border-style: none;
-        margin-right: 2rem;
     }
     
-    .line {
-        width: 2rem;
-        height: 0.8vh;
-        background: black;
-        margin: 0.2rem;
-        border-radius: 10px;
+    .button-menu .material-symbols-outlined {
+        font-size: 10vw;
+        color: #000;
     }
 }
