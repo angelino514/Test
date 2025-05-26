@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+ <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons&family=Material+Icons+Outlined&family=Material+Icons+Round&family=Material+Icons+Sharp&family=Material+Icons+Two+Tone&display=swap" rel="stylesheet">
+ 
   <title>Logica</title>
   
   <!-- Project logic  -->
@@ -26,20 +30,24 @@
           
         <!-- div navbar --->
         <div class="div-navbar">
-          
-          <!-- button remove --->
-          <button class="remove">
-            <img class="remove-icon" src="icon/close.png" alt="" />
-          </button>
-          <!-- button remove --->
             <div class="navbar-list">
               <nav  class="navbar">
-                <ul class="list-navbar">
+                
+                <div class="div-button-remove">
+                   
+                   <button class="button-remove">
+                      <span class="material-symbols-outlined">
+                        close
+                      </span>
+                   </button>
+                   
+                </div>
+                
+                
+                <ul class="list-itens-navbar">
                   <li>
                     <a href="#" class="link link-activo">
-                      <span >
-                        <img class="icon-link" src="icon/home (1).png" alt="" />
-                      </span>
+                     <span class="material-symbols-outlined">home</span>
                       <span class="text-link">
                         Home
                       </span>
@@ -47,8 +55,8 @@
                   </li>
                   <li>
                     <a href="#" class="link">
-                      <span>
-                        <img class="icon-link" src="icon/cumputer.png" alt="" />
+                      <span class="material-symbols-outlined">
+                        computer
                       </span>
                       <span class="text-link">
                         Project
@@ -57,8 +65,8 @@
                   </li>
                   <li>
                     <a href="#" class="link">
-                      <span>
-                        <img class="icon-link" src="icon/user.png" alt="" />
+                      <span class="material-symbols-outlined ">
+                        account_circle
                       </span>
                       <span class="text-link">
                         About me
@@ -76,7 +84,7 @@
     
                <button class="button-WatsAp">
                   <span>
-                    <img class="icon-watsaap" src="icon/whatsapp.png" alt="" />
+                    <img class="whatsapp-icon" src="whatsapp.png" alt="" />
                   </span>
                   <span class="text-Watsaap">
                     WhatsApp
@@ -89,9 +97,9 @@
          <div class="div-button-menu">
            
            <button class="button-menu">
-             <div class="line"></div>
-             <div class="line"></div>
-             <div class="line"></div>
+               <span class="material-symbols-outlined ">
+                  Menu
+              </span>
            </button>
            
          </div>
